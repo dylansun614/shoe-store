@@ -1,0 +1,16 @@
+.featured-products {
+  padding: 80px 120px;
+}
+
+.featured-products h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 35px;
+}

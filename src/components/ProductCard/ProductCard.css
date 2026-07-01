@@ -1,0 +1,23 @@
+.product-card {
+  cursor: pointer;
+}
+
+.product-image {
+  background: #f7f4ef;
+  padding: 30px;
+  margin-bottom: 18px;
+}
+
+.product-image img {
+  width: 100%;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  color: #555;
+}
