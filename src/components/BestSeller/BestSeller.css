@@ -1,0 +1,35 @@
+.best-seller {
+    padding: 100px 120px;
+    background: #f7f4ef;
+}
+
+.best-seller-header {
+  margin-bottom: 45px;
+}
+
+.best-seller-header p {
+  color: #888;
+  margin-bottom: 15px;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.best-seller-header h2 {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.best-seller-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.best-seller .product-image {
+  background: white;
+}
+
+.best-seller .product-card p {
+  color: #555;
+}
