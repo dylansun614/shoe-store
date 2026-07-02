@@ -1,0 +1,32 @@
+.category {
+  padding: 80px 120px;
+  background: white;
+}
+
+.category h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.category-card {
+  height: 220px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 30px;
+
+  background: #f7f4ef;
+
+  cursor: pointer;
+}
+
+.category-card h3 {
+  font-size: 26px;
+}
