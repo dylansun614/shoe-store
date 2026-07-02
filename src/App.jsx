@@ -1,18 +1,14 @@
-import "./App.css"
+import { Routes, Route } from "react-router-dom"
 
-import Navbar from "./components/Navbar/Navbar"
-import Hero from "./components/Hero/Hero"
-import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts"
-import Category from "./components/Category/Category"
+import Home from "./pages/Home/Home"
+import ProductDetail from "./pages/ProductDetail/ProductDetail"
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Category />
-      <FeaturedProducts />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+    </Routes>
   )
 }
 
