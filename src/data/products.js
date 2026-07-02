@@ -2,71 +2,103 @@ import heroShoe from "../assets/hero-shoe.jpg";
 
 const products = [
   {
-    id: 1,
-    name: "GR-001",
-    brand: "GR",
-    category: "Men",
-    price: 129,
-    image: heroShoe,
+  id: 1,
+  name: "GR-001",
+  brand: "GR",
+  category: "Men",
+  price: 129,
+  image: heroShoe,
 
-    description: "Minimal everyday sneaker with premium leather upper.",
-    rating: 4.8,
-    stock: 12,
-    colors: ["White", "Brown"],
+  description:
+    "A clean everyday sneaker designed for comfort, confidence, and modern streetwear.",
 
-    isFeatured: true,
-    isBestSeller: true,
+  colors: ["White", "Black", "Brown"],
+
+  sizes: [39, 40, 41, 42, 43],
+
+  stock: 18,
+
+  rating: 4.8,
+
+  reviews: 126,
+
+  isFeatured: true,
+  isBestSeller: true,
   },
 
-  {
-    id: 2,
-    name: "GR-002",
-    brand: "GR",
-    category: "Women",
-    price: 139,
-    image: heroShoe,
+{
+  id: 2,
+  name: "GR-002",
+  brand: "GR",
+  category: "Women",
+  price: 139,
+  image: heroShoe,
 
-    description: "Comfortable streetwear sneaker for daily use.",
-    rating: 4.6,
-    stock: 8,
-    colors: ["White", "Black"],
+  description:
+    "Lightweight everyday sneaker with a minimalist aesthetic.",
 
-    isFeatured: true,
-    isBestSeller: false,
+  colors: ["White", "Pink"],
+
+  sizes: [36, 37, 38, 39],
+
+  stock: 10,
+
+  rating: 4.6,
+
+  reviews: 89,
+
+  isFeatured: true,
+  isBestSeller: false,
   },
 
-  {
-    id: 3,
-    name: "GR-003",
-    brand: "GR",
-    category: "Running",
-    price: 149,
-    image: heroShoe,
+{
+  id: 3,
+  name: "GR-003",
+  brand: "GR",
+  category: "Running",
+  price: 149,
+  image: heroShoe,
 
-    description: "Performance running shoe with lightweight cushioning.",
-    rating: 4.9,
-    stock: 15,
-    colors: ["White", "Blue"],
+  description:
+    "Responsive running shoe built for long-distance comfort.",
 
-    isFeatured: false,
-    isBestSeller: true,
+  colors: ["Blue", "Black"],
+
+  sizes: [40, 41, 42, 43, 44],
+
+  stock: 7,
+
+  rating: 4.9,
+
+  reviews: 214,
+
+  isFeatured: false,
+  isBestSeller: true,
   },
 
-  {
-    id: 4,
-    name: "GR-004",
-    brand: "GR",
-    category: "New Arrivals",
-    price: 159,
-    image: heroShoe,
+{
+  id: 4,
+  name: "GR-004",
+  brand: "GR",
+  category: "New Arrival",
+  price: 159,
+  image: heroShoe,
 
-    description: "Latest collection inspired by modern fashion.",
-    rating: 4.7,
-    stock: 4,
-    colors: ["White", "Grey"],
+  description:
+    "Premium leather sneaker inspired by luxury street fashion.",
 
-    isFeatured: true,
-    isBestSeller: true,
+  colors: ["White", "Cream"],
+
+  sizes: [39, 40, 41, 42],
+
+  stock: 5,
+
+  rating: 5.0,
+
+  reviews: 42,
+
+  isFeatured: true,
+  isBestSeller: true,
   },
 ];
 

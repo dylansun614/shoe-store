@@ -14,7 +14,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
-
   padding: 100px 120px;
 }
 
@@ -45,9 +44,19 @@
   margin-bottom: 20px;
 }
 
+.product-category {
+  color: #777;
+  margin-bottom: 20px;
+}
+
 .product-price {
   font-size: 28px;
   margin-bottom: 30px;
+}
+
+.product-rating {
+  margin-bottom: 25px;
+  color: #333;
 }
 
 .product-description {
@@ -57,15 +66,100 @@
   margin-bottom: 40px;
 }
 
+.product-stock {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ---------- Colors ---------- */
+
+.product-colors {
+  margin-bottom: 35px;
+}
+
+.product-colors p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.color-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.color-list span {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  background: white;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.color-list span:hover {
+  background: #111;
+  color: white;
+}
+
+/* ---------- Sizes ---------- */
+
+.product-sizes {
+  margin-bottom: 35px;
+}
+
+.product-sizes p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.size-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.size-list span {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ddd;
+  background: white;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.size-list span:hover {
+  background: #111;
+  color: white;
+}
+
+/* ---------- Button ---------- */
+
 .product-detail-info button {
   width: 220px;
   padding: 18px;
 
   border: none;
 
-  background: #0f0f0f;
+  background: #111;
   color: white;
 
   font-size: 16px;
   cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.product-detail-info button:hover {
+  background: #333;
+}
+.size-list span.selected {
+  background: #111;
+  color: white;
 }
