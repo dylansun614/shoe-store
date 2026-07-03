@@ -139,6 +139,11 @@
   color: white;
 }
 
+.color-list span.selected {
+  background: #111;
+  color: white;
+}
+
 /* ---------- Button ---------- */
 
 .product-detail-info button {

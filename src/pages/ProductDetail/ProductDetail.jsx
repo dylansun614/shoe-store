@@ -9,6 +9,7 @@ function ProductDetail() {
   const product = products.find((item) => item.id === Number(id))
 
   const [selectedSize, setSelectedSize] = useState(null)
+  const [selectedColor, setSelectedColor] = useState(null)
 
   if (!product) {
     return <h1>Product not found</h1>
@@ -44,7 +45,13 @@ function ProductDetail() {
 
             <div className="color-list">
               {product.colors.map((color) => (
-                <span key={color}>{color}</span>
+                <span
+                  key={color}
+                  className={selectedColor === color ? "selected" : ""}
+                  onClick={() => setSelectedColor(color)}
+                >
+                  {color}
+                </span>
               ))}
             </div>
           </div>
