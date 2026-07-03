@@ -14,23 +14,20 @@ function ProductDetail() {
   const [selectedSize, setSelectedSize] = useState(null)
   const [selectedColor, setSelectedColor] = useState(null)
   const [quantity, setQuantity] = useState(1)
-  
+  const [message, setMessage] = useState("")
+
 function handleAddToCart() {
   if (!selectedColor) {
-    alert("Please select a color")
+    setMessage("Please select a color")
     return
   }
 
   if (!selectedSize) {
-    alert("Please select a size")
+    setMessage("Please select a size")
     return
   }
 
-  alert(
-    `Added ${quantity} × ${product.name}
-Color: ${selectedColor}
-Size: ${selectedSize}`
-  )
+  setMessage(`Added ${quantity} × ${product.name} to cart`)
 }
   
   if (!product) {
@@ -39,6 +36,13 @@ Size: ${selectedSize}`
 
   return (
     <>
+      {message && (
+        <div className="toast-message">
+          {message}
+        </div>
+      )}
+
+  <Link to="/" className="back-link"></Link>
       <Link to="/" className="back-link">
         ← Back to Shop
       </Link>
