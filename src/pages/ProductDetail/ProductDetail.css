@@ -146,7 +146,7 @@
 
 /* ---------- Button ---------- */
 
-.product-detail-info button {
+.product-add-button {
   width: 220px;
   padding: 18px;
 
@@ -161,10 +161,44 @@
   transition: 0.3s ease;
 }
 
-.product-detail-info button:hover {
+.product-add-button:hover {
   background: #333;
 }
 .size-list span.selected {
   background: #111;
   color: white;
+}
+
+.product-quantity {
+  margin-bottom: 35px;
+}
+
+.product-quantity p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quantity-selector button {
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #ddd;
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+.quantity-selector span {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
 }

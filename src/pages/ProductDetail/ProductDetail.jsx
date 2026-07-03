@@ -10,7 +10,8 @@ function ProductDetail() {
 
   const [selectedSize, setSelectedSize] = useState(null)
   const [selectedColor, setSelectedColor] = useState(null)
-
+  const [quantity, setQuantity] = useState(1)
+  
   if (!product) {
     return <h1>Product not found</h1>
   }
@@ -72,7 +73,31 @@ function ProductDetail() {
             </div>
           </div>
 
-          <button>Add to Cart</button>
+          <div className="product-quantity">
+            <p>Quantity</p>
+
+            <div className="quantity-selector">
+              <button
+                type="button"
+                onClick={() => setQuantity(Math.max(1, quantity - 1))}
+              >
+                −
+              </button>
+
+              <span>{quantity}</span>
+
+              <button
+                type="button"
+                onClick={() => setQuantity(quantity + 1)}
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <button className="product-add-button">
+            Add {quantity} to Cart
+          </button>
         </div>
       </section>
     </>
