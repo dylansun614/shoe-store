@@ -1,16 +1,37 @@
 import { useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import products from "../../data/products"
+import ProductCard from "../../components/ProductCard/ProductCard"
 import "./ProductDetail.css"
 
 function ProductDetail() {
   const { id } = useParams()
 
   const product = products.find((item) => item.id === Number(id))
-
+  const relatedProducts = products.filter(
+    (item) => item.id !== product.id
+  )
   const [selectedSize, setSelectedSize] = useState(null)
   const [selectedColor, setSelectedColor] = useState(null)
   const [quantity, setQuantity] = useState(1)
+  
+function handleAddToCart() {
+  if (!selectedColor) {
+    alert("Please select a color")
+    return
+  }
+
+  if (!selectedSize) {
+    alert("Please select a size")
+    return
+  }
+
+  alert(
+    `Added ${quantity} × ${product.name}
+Color: ${selectedColor}
+Size: ${selectedSize}`
+  )
+}
   
   if (!product) {
     return <h1>Product not found</h1>
@@ -95,9 +116,25 @@ function ProductDetail() {
             </div>
           </div>
 
-          <button className="product-add-button">
+          <button
+            className="product-add-button"
+            onClick={handleAddToCart}
+          >
             Add {quantity} to Cart
           </button>
+        </div>
+      </section>
+
+      <section className="related-products">
+        <h2>You May Also Like</h2>
+
+        <div className="products-grid">
+          {relatedProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+            />
+          ))}
         </div>
       </section>
     </>

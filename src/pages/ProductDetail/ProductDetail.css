@@ -202,3 +202,20 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+/* ---------- Related Products ---------- */
+
+.related-products {
+  padding: 90px 120px;
+}
+
+.related-products h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.related-products .products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
